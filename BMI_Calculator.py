@@ -1,0 +1,5 @@
+print('We are going to calculate your BMI.')
+Height = input('Please enter your height in inches: \n')
+Weight = input('Please enter your weight in pounds: \n')
+BMI = round((int(Weight)*703/(int(Height)*int(Height))),1)
+print(f'Your BMI is calculated as: {BMI}')
