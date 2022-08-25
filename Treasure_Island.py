@@ -19,7 +19,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/______/
 *******************************************************************************''')
 print('Welcome to Treasure Island! \n Your goal is to find the treasure!')
-Start = input('You are at a crossroad.  Where do you want to go?  Type "left" or "right": ')
+Start = input('You are at a crossroad.  Where do you want to go?  Type "left" or "right": ').lower()
 if Start == "left":
     print('''
 
@@ -52,7 +52,7 @@ __/_  /   \ ______/ ''   /'\_,__
 '  |[]|,.--'' '',   ''-,.    |
   ..    ..-''    ;       ''. '    """)
     print('You arrive at a town.')
-    town = input('Do you want to go into the inn or continue on down the path and leave? Type "inn" or "leave": ')
+    town = input('Do you want to go into the inn or continue on down the path and leave? Type "inn" or "leave": ').lower()
     if town == "inn":
         print('\n \n \n')
         print('''
@@ -96,7 +96,7 @@ __/_  /   \ ______/ ''   /'\_,__
     elif town == "leave":
       print('You walk quickly out of the town, which was a good idea because as you get back on the road, \nyou hear shouting and screaming from the inn.')
       print('You continue walking for a short while and eventually get to a river with a dock.  The sign on the dock reads: "River Boat Crossing: ever hour, on the hour".')
-      river = input('You wish to cross the river.  You have 30 minutes until the boat arrives at the dock.  \nDo you wait for the boat or do you swim across?  Type "wait" or "swim": ')
+      river = input('You wish to cross the river.  You have 30 minutes until the boat arrives at the dock.  \nDo you wait for the boat or do you swim across?  Type "wait" or "swim": ').lower()
       if river == "wait":
         print('''
                  ;~
@@ -165,7 +165,7 @@ __/_  /   \ ______/ ''   /'\_,__
        ''')
         input('You start swimming across the river.  A river monster appears.  Press enter to continue.')
         print('You start swimming faster but notice the river monster ignores you and keeps swimming along.')
-        box = input('You reach the other side of the river.  You notice a road a bit of a distance away and also notice a telephone booth off to the right of the docks.  Do you go inside or continue towards the road? Type "inside" or "road": ')
+        box = input('You reach the other side of the river.  You notice a road a bit of a distance away and also notice a telephone booth off to the right of the docks.  Do you go inside or continue towards the road? Type "inside" or "road": ').lower()
         if box == "inside":
             print('''
                      ___
