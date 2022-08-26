@@ -95,7 +95,7 @@ __/_  /   \ ______/ ''   /'\_,__
  |......"""""""""""""""........"""""....""""".."" ''')
     elif town == "leave":
       print('You walk quickly out of the town, which was a good idea because as you get back on the road, \nyou hear shouting and screaming from the inn.')
-      print('You continue walking for a short while and eventually get to a river with a dock.  The sign on the dock reads: "River Boat Crossing: ever hour, on the hour".')
+      print('You continue walking for a short while and eventually get to a river with a dock.  The sign on the dock reads: "River Boat Crossing: every hour, on the hour".')
       river = input('You wish to cross the river.  You have 30 minutes until the boat arrives at the dock.  \nDo you wait for the boat or do you swim across?  Type "wait" or "swim": ').lower()
       if river == "wait":
         print('''
