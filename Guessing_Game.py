@@ -17,7 +17,7 @@ def hard():
         else:
             print("Too low!")
             attempt -=1
-    print( "The game is over.")
+    print(f"The game is over.  The number was {hard_num}.")
 
 def easy():
     easy_num = random.randint(1,100)
@@ -34,7 +34,7 @@ def easy():
         else:
             print("Too low!")
             attempt -=1
-    print("The game is over.")
+    print(f"The game is over.  The number was {easy_num}.")
 
 
 replay = True
@@ -46,7 +46,7 @@ while replay is True:
         hard()
     else:
         easy()
-    play_again = input("Would you like to play again? 'Y' or 'N': ")
+    play_again = input("Would you like to play again? 'Y' or 'N': ").upper()
     if play_again == 'N':
         replay = False
 
