@@ -10,10 +10,17 @@ screen.tracer(0) #turns off the animation/screen refresh
 
 snake = Snake()
 
+screen.listen() #the program will start looking for keystrokes below
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
+
+
 game_is_on = True
 while game_is_on:
     screen.update()  # refreshes the screen and makes it appear that the all pieces of the snake move together
-    time.sleep(0.1)
+    time.sleep(0.1) #delays the refresh of the screen 0.1 seconds
     snake.move()
 
 
