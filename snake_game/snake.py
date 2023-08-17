@@ -16,11 +16,7 @@ class Snake:
 
     def create_snake(self):
         for position in STARTING_POSITIONS:
-            new_segment = Turtle(shape="square")
-            new_segment.color("white")
-            new_segment.penup()
-            new_segment.goto(position)
-            self.segments.append(new_segment) #includes self. to indicate it is referring to the attributes
+            self.add_segment(position)
 
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):  # makes the pieces to appear to "follow" the first segment
@@ -45,3 +41,14 @@ class Snake:
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
 
+    def add_segment(self, position):
+        new_segment = Turtle(shape="square")
+        new_segment.color("white")
+        new_segment.penup()
+        new_segment.goto(position)
+        self.segments.append(new_segment)  # includes self. to indicate it is referring to the attributes
+
+    def extend(self):
+        #adds a new segment to the snake
+        self.add_segment(self.segments[-1].position()) #so it goes to the end of the list and gets that last segment
+        #and adds the segment there
