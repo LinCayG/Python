@@ -48,6 +48,13 @@ class Snake:
         new_segment.goto(position)
         self.segments.append(new_segment)  # includes self. to indicate it is referring to the attributes
 
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+
     def extend(self):
         #adds a new segment to the snake
         self.add_segment(self.segments[-1].position()) #so it goes to the end of the list and gets that last segment
