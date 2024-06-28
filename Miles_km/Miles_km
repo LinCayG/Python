@@ -1,0 +1,12 @@
+import tkinter
+
+window = tkinter.Tk()
+window.title("This is the title") #sets the title
+window.minsize(width=500, height=300) #sizes window in pixels
+
+#label
+my_label = tkinter.Label(text = "I am a label", font=("Arial", 24, "bold")) #create a label size 24, but will not show up until .pack is called
+my_label.pack(side="bottom") #this places it in the screen and automatically centers it in the top of the screen unless you specify a side
+
+
+window.mainloop() #will keep window on main screen and needs to be at the end of your program
